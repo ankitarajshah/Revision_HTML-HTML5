@@ -6,15 +6,51 @@
     <title>IFRAme</title>
 </head>
 <body>
+    <p>embed Tag vs iframe Tag
+        embedding external resources which are generally multimedia contents like video, audio, a web page link, or a picture, into our HTML document.<br> 
+        iframe is primarily used to include resources from other domains or subdomains but can be used to include content from the same domain as well.</p>
     <!-- <iframe> tag specifies an inline frame.
         An Inline frame is used to embed another document within the current HTML document. 
         syntax-----<iframe src="url" title="description"></iframe>-->
-        
-        <iframe src="../03_Layout.html"
+        <p>An HTML iframe is used to display a web page within a web page.</p>
+        <iframe src="/BasicLayout.html"
                 title="Layout file"
                 height="500px"
                 width="700px">
-
         </iframe>
+        <hr>
+        <p>YouTube Video</p>
+        <hr>
+        <iframe src="https://www.youtube.com/embed/8367ETnagHo"
+            title="YouTube video player"
+            width="560"
+            height="315"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <hr>
+        <p>Video</p>
+        <video width="320" height="240" controls>
+            <source src="/CSS_Practical/Image/movie.mp4" type="video/mp4">    
+        </video>
+        <hr>
+        <p>Audio</p>
+        <audio controls>
+            <source src="/CSS_Practical/Image/horseaudio.ogg" type="audio/ogg">
+        </audio>
+        <hr>
+        <p>Embed===The <embed> element can also be used to include HTML in HTML:</p>
+        <embed width="200px" height="500px" src="./01_Intro.html">
+        <hr>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9392488198428!2d72.55444417418222!3d23.026002716202285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84faa5a36071%3A0x9af325a448f09478!2sTops%20Technologies!5e0!3m2!1sen!2sin!4v1690880696087!5m2!1sen!2sin"
+        width="600"
+        height="400"
+        style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+                
+        </iframe>
+        
 </body>
 </html>

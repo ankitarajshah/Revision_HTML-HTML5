@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+    <style>
+        a:link{
+            color: red;
+        }
+        a:hover{
+            background-color: hotpink;
+        }
+        /* Pseudo-classes can be combined with HTML classes: (ankita is class name comibined with html tag) */
+        a.ankita:hover{
+            font-size: 50px;
+        }
+    
+        p{
+            display: none;
+            background-color: cadetblue;
+        }
+        h2:hover p{
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo Class Selector
+        
+        <p>Tooltip on hover</p>
+    </h2>
+    
+    <a  class="ankita" href="../../Image/CSS_PseudoClass Selectors.png">CSS PseudoClass list</a>
+    <hr>
+    <input type="text" placeholder="enter name">
+    <img src="../../Image/CSS_PseudoClass Selectors.png">
+</body>
+</html>

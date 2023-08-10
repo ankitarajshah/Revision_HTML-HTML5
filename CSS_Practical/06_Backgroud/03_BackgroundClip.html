@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip</title>
+    <style>
+        .background-clip{
+            background-image: url(../Image/banner.jpg);
+            height: 500px;
+            border:10px dotted yellow;
+            color: aqua;
+            background-repeat: no-repeat;
+            padding: 50px;
+
+            /* background-clip: border-box; */
+            /* background-clip: padding-box; */
+            background-clip: content-box;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="background-clip">
+        background-clip property defines how far the background (color or image) should extend within an element.<br>
+        border-box----Default value. The background extends behind the border<br>
+        content-box------The background extends to the edge of the content box<br>
+        padding-box----The background extends to the inside edge of the border<br>
+
+    </div>
+</body>
+</html>

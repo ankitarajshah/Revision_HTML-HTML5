@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background in CSS</title>
+    <style>
+        /* div[class*=background]{} */
+        div{
+            height: 600px;
+            margin: 10px 0px;
+            color: aqua;
+        }
+        .background-color{
+            background-color: aqua;
+        }
+        .background-image{
+            background-image: url(../Image/banner.jpg);
+            background-repeat: no-repeat;
+            border:10px dashed yellow;
+
+        }
+        .background-clip{
+            background-image: url(../Image/banner.jpg);
+            border:10px dotted yellow;
+            background-repeat: no-repeat;
+            padding: 50px;
+            /* background-clip: border-box; */
+            /* background-clip: padding-box; */
+            background-clip: content-box;
+        }
+        .background-attachment{
+            background-image: url(../Image/banner.jpg);
+            margin:10px 0px;
+            background-repeat: no-repeat;
+            background-color: aqua;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            /* background-attachment: fixed/scroll/; */
+            color: aqua;
+        }
+        .background-position{
+            background-image: url(../Image/banner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 300px;
+            background-position: center;
+            background-position: left;
+            background-position: right;
+            background-position: top;
+            background-position: bottom;
+            background-position: 20% 40%;
+        }
+        .background-repeat{
+            background-image: url(../Image/banner1.jfif);
+            background-size: 200px;
+            background-repeat: no-repeat;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: round;
+            background-repeat: space;
+
+        }
+        .background-origin{
+            background-image: url(../Image/banner.jpg);
+            background-repeat: no-repeat;
+            border: 10px dotted yellow;
+            background-origin: border-box;
+            background-origin: padding-box;
+            padding: 100px;
+            background-origin: content-box;
+        }
+
+        .background-size{
+            background-image: url(../Image/banner.jpg);
+            border: 10px dashed yellow;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: contain;
+            background-size: cover;
+        }
+        .background-shorthand{
+            background: url(../Image/banner.jpg) no-repeat center center;
+            border: 10px dashed yellow;
+        }
+        .background-multiple{
+            background:url(../Image/banner.jpg) no-repeat left ,url(../Image/banner1.jfif) no-repeat right ;
+            /* background-size: 200px  */
+            background-size: 200px, 200px;
+            background-repeat: no-repeat;
+            background-position: left,right;    
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>background-color</li>
+        <li>background-image---- /* The background image */</li> 
+        <li>background-repeat--- /* Set the background image to no repeat */</li>
+        <li>background-attachment---- /* Set background image to fixed (don't scroll along with the page) */</li>
+        <li>background-position---- /* Center the background image */</li>
+        
+        <li>background-clip</li>
+        <li>background-origin</li>
+        <li>background-size</li>
+        <li>shorthand_background</li>
+        <li>multiple_background</li>
+    </ul>
+<hr>
+<hr>
+<hr>
+    <div class="background-color">background</div>
+    <hr>
+    <hr>
+    <div class="background-image">The background image </div>
+    <hr>
+<hr>
+    <div class="background-clip">
+        background-clip property defines how far the background (color or image) should extend within an element.<br>
+        border-box----Default value. The background extends behind the border<br>
+        content-box------The background extends to the edge of the content box<br>
+        padding-box----The background extends to the inside edge of the border<br>
+    </div>
+<hr>
+<hr>
+
+    <p>In this example, we have created a fixed background image
+        <br> that will disappear slowly on scroll. 
+        <br>Scroll the page to see the effect. 
+        <br>
+        <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.
+    </p>
+    <div class="background-attachment">background-attachment---The background-attachment property specifies whether 
+        the background image should scroll or be fixed (will not scroll with the rest of the page):
+    </div>
+    <div style="height: 500px; background-color: yellow; color: black;"> This div is only to enable scroll</div>
+<hr>
+<hr>
+<div class="background-position">background-position</div>
+<hr>
+<hr>
+<div class="background-repeat">background-repeat</div>
+<hr>
+<hr>
+<div class="background-origin">background-origin</div>
+
+<hr>
+<hr>
+<div class="background-size">background-size</div>
+<hr>
+<hr>
+<div class="background-shorthand">background-shorthand</div>
+<hr>
+<hr>
+<div class="background-multiple">background-multiple</div>
+
+
+</body>
+</html>

@@ -5,55 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .prod{
-            display: flex;
-            gap: 20px;
-            background-color:greenyellow;
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
         }
-        div[class*=box-1]{
-            height: 600px;
-            width: 500px;
-            background-color:aquamarine;
-            border: 2px solid red;
-            /* display: flex; */
+        .container{
+            display: flex;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+            width: 300px;
+            background-color: rgb(181, 228, 228);
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
             
         }
-
-        div[class*=pic]{
-            width: 200px;
-            height: 200px;
-            background-color: rgb(81, 194, 28);
-            border: 1px solid black;
+        .pic_info{
+            width: 100%;
+            background-color: rgb(223, 107, 107);
+            border: 2px solid grey;
         }
-        div[class*=p]{
-            width: 100px;
-            height: 100px;
-            background-color: rgb(50, 216, 238);
-            border: 1px solid black;
+        img{
+            border-radius: 10px;
+        }
+        p{
+            padding: 20px;
+            border: 2px solid grey;
         }
     </style>
 </head>
-
 <body>
-    <div class="prod">
-        <div class="box-1">
+    <div class="container">
+        <div class="card">
             <div class="pic">
-                <img src="../Image/Contact-Us.png" height="100px" width="100px" alt="">
+                <img src="./Image/watch.jpg" alt="watch">
             </div>
-            <div class="p"></div>
+            <div class="pic_info">
+                <p>Watch</p>
+                <p>$75</p>
+                <p><button>Add to Cart</button></p>
+            </div>
         </div>
-        <div class="box-1">
-            <div class="pic"></div>
-            <div class="p"></div>
+        <div class="card">
+            <div class="pic">
+                <img src="./Image/watch.jpg" alt="watch">
+            </div>
+            <div class="pic_info">
+                <p>Watch</p>
+                <p>$75</p>
+                <p><button>Add to Cart</button></p>
+            </div>
         </div>
-        <div class="box-1">
-            <div class="pic"></div>
-            <div class="p"></div>
-        </div>
-        <div class="box-1">
-            <div class="pic"></div>
-            <div class="p">Price</div>
+        <div class="card">
+            <div class="pic">
+                <img src="./Image/watch.jpg" alt="watch">
+            </div>
+            <div class="pic_info">
+                <p>Watch</p>
+                <p>$75</p>
+                <p><button>Add to Cart</button></p>
+            </div>
         </div>
     </div>
+   
+    
 </body>
 </html>

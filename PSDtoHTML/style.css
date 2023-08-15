@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+ul li {
+    opacity: 0.780;
+font-size: 35px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Raleway";
+}

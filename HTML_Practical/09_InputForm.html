@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form </title>
+</head>
+<body>
+    <h1>INPUT TYPEs Form</h1>
+    <h3>Student registration Form</h3>
+    <fieldset>
+        <legend>Registration form</legend>
+        <form action="">
+            <div class="container">
+                <label for="fname">Full Name:</label>
+                <input type="text" placeholder="Enter your Full Name" name="fname" id="fname" required>
+                <br>
+                <label for="uname">UserName:</label>
+                <input type="text" name="username" id="username" placeholder="Enter your username">
+                <br>
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd">
+                <br>
+                <input type="submit" value="Submit">
+                <!-- <p>If you omit the submit button's value attribute, the button will get a default text:</p> -->
+                <br>
+                <input type="reset">
+                <br>
+                <hr>
+
+                <p>Choose your favourite subject</p>
+                <input type="radio" id="html" name="fav_sub" value="HTML">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" name="fav_sub" value="CSS">
+                <label for="css">CSS</label>
+                <input type="radio" id="js" name="fav_sub" value="Javascript">
+                <label for="js">Javascript</label>
+                <hr>
+
+                <p>Choose your favourite hobby</p>
+                <input type="checkbox" id="dance" name="dance" value="Dancing">
+                <label for="dance">Dancing</label>
+                <input type="checkbox" id="read" name="read" value="Reading">
+                <label for="read">Reading</label>
+                <hr>
+                <br>
+                <input type="button" onclick="alert('hello')" value="Click Me!">
+                <br>
+                <label for="fav_color">Select your fav_color:</label>
+                <input type="color" id="fav_color" name="fav_color" value="#a445b2">
+                <br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" placeholder="Enter your Birthdate" name="birthday" id="birthday">
+                <br>
+                <hr>
+                <p>You can also use the min and max attributes to add restrictions to dates:</p>
+                <label for="datemax">Enter date before 1980-01-01</label>
+                <input type="date" name="datemax" id="datemax" max="1979-12-31">
+                <br>
+                <label for="datemin">Enter date after 2000-01-01</label>
+                <input type="date" name="datemin" id="datemin" min="2000-01-02">
+                <br>
+                <label for="birthdaytime">Birthdate(Date and Time)</label>
+                <input type="datetime-local" name="birthdaytime" id="birthdaytime">
+                <br>
+                <label for="email">Enter your E-mail</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="img">Image</label>
+                <input type="image" src="./Image/Contact-Us.png" alt="image" id="" height="150px" width="150px">
+                <br>
+                <label for="myfile"></label>
+                <input type="file" name="" id="">
+                <br>
+                <label for=""></label>
+                <input type="" name="" id="">
+                <br>
+                <label for=""></label>
+                <input type="text" name="" id="">
+                <br>
+                <label for=""></label>
+                <input type="text" name="" id="">
+                <br>
+                <label for=""></label>
+                <input type="text" name="" id="">
+                <br>
+                <label for=""></label>
+                <input type="text" name="" id="">
+                <br>
+                <label for=""></label>
+                <input type="text" name="" id="">
+                <br>
+                <label for=""></label>
+                <input type="text" name="" id="">
+                <br>
+                <label for=""></label>
+                <input type="text" name="" id="">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

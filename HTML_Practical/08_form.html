@@ -3,25 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form in HTML</title>
+    <title>Login Form in HTML</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        fieldset{
+            background-color: powderblue;
+            width: 400px;
+            padding: 10px;
+        }
+        input[type=text],input[type=password]
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+        }
+        button{
+            width: 100%;
+            background-color: rgb(152, 240, 152);
+            padding: 10px 20px;
+        }
+        .cancelbtn{
+            width: 50%;
+            background-color: rgb(236, 69, 69);
+        }
+        .password{
+            float: right;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Form in HTML</h1>
+    <h1>Login Form in HTML</h1>
 
     <fieldset>
 
-        <legend>Form</legend>
+        <legend>Login Form</legend>
+  
+            <form action="" method="" enctype="">
 
-        <form action="" method="" enctype="">
-            <label for="username">User Name</label>
-            <input type="text" name="username" id="username">
+                <div class="container">
+                    
+                    <label for="uname">User Name</label>
+                    <input type="text" name="uname" id="uname" placeholder="Enter username" required>
+                    <br>
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" placeholder="Enter password" required>
+                    <br>
+                    <button type="submit">Login</button>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" checked="checked" name="remember" id="">Remember me
+                    </label>
+                </div>
 
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password">
-            <button>Submit</button>
+                <div class="container">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="password">Forgot <a href="#">password?</a></span>
+                </div>
 
-        </form>
-
+            </form>
+        
+        
     </fieldset>
     <!-- get => less secure , limitation 255, bookmarked, show details in url. -->
 <!-- post => secure, not bookmarked -->

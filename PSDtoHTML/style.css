@@ -47,6 +47,10 @@ header{
     background-color: #2a3b40;
     
 }
+h3 p{
+    color: #FFf;
+    opacity: 0.8;
+}
 .one{
     height: 400px;
 }
@@ -70,10 +74,26 @@ font-weight: 400;
 font-family: "Raleway";
 }
 /* section3---plate start */
+
 h2{
 font-size: 104px;
 color: #2c3a42;
 font-weight: 400;
+}
+#plate{
+    background-image:url(./Images/Section3background.png);
+    height: 850px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size:cover; */
+    background-size: 100% 100%;
+}
+.indianbox{
+    height: 800px;
+    width: 80%;
+    background-color: #FFf;
+    opacity: 0.8;
 }
 
 

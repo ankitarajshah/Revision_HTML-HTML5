@@ -12,33 +12,29 @@
 /* Header start */
 header{
     background-image:url(./Images/background1.png);
-    height: 700px;
-    width: 100%;
+    height: 600px;
+    /* width: 100%; */
     background-position: center;
     background-repeat: no-repeat;
     /* background-size:cover; */
     background-size: 100% 100%;
-    
-}
-.nb{
     display: flex;
-    justify-content:space-between;
-    padding: 30px;
-    font-size: 35px;
-    font-weight: 700;
-    color: #FFF;
-    opacity: 0.8; 
-      
+    position: relative; 
+    padding: 20px;  
+    font-size: 40px;
 }
 .brunch{
-    opacity: 0.820;
-    width: 500px;
-    height: 470px;
+    /* height: 300px; */
+    width: 40%;
     background-color: #ffffff;
+    opacity: 0.820;
     text-align: center;
-    padding: 50px 30px;
+    /* padding: 50px 30px; */
+    position: absolute;
+    top: 30%;
+    left: 30%;    
 }
- ul li{
+ul li{
     display: inline-block;
     text-decoration: none;
     padding: 0 20px;    
@@ -48,27 +44,40 @@ li a{
     color: #FFF;
     opacity: 0.8;
 }
+header a{
+    text-decoration: none;
+    color: #FFF;
+    opacity: 0.8;  
+}
 button{
     width: 266px;
     height: 59px;
     background-color: #ffffff;
 }
+.h{
+    font-size: 60px;color: #2c3a42;font-weight:400;font-family:Cookie;text-align: center;
+}
+.t{
+    font-size: 40px;color:#ad6c12;font-weight:200;text-align: center;
+}
 /* Section1-flavour start */
 #flavour{
-    height: 600px;
+    /* height: 600px; */
     width: 100%;
     background-color: #2a3b40;
-   
 }
 .one{
     height: 350px;
     color: #FFF;
     padding: 50px;
 }
-.two{
+.cf{
+    display: flex;
+    flex-direction: row;
     height: 250px;
     background-color: #FFF;
     opacity: 0.8;
+    padding: 30px;
 }
 h5{
     font-size: 19px;
@@ -88,7 +97,7 @@ font-family: "Raleway";
 /* Section2-Plate start */
 #plate{
     background-image:url(./Images/Section2background.png);
-    height: 820px;
+    /* height: 720px; */
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,15 +106,19 @@ font-family: "Raleway";
     padding: 30px;
 }
 .indianbox{
-    height: 755px;
+    /* height: 630px; */
     width: 65%;
     background-color: #FFf;
-    opacity: 0.8;
-    text-align: center;
+    opacity: 0.8; 
 }
 .indianbox img{
-    height: 210px;
-    width: 210px; 
+    height: 100%;
+    width: 100%; 
+    object-fit:cover;
+}
+.fc{
+    display: flex;
+    
 }
 
 /* Section3-Menu start */
@@ -119,34 +132,34 @@ font-family: "Raleway";
     background-attachment: fixed;
    
 }
-.circle{
-    height: 400px;
+.menucont{
+    /* height: 400px; */
     background:#2a3b40;
     position: relative;
    
 }
-.i1{
+.menucont .i1{
     position: absolute;
     top: 0;
     left: 0;
 }
-.i2{
+.menucont .i2{
     position: absolute;
     top: 0;
     right: 0;
 }
-.layer{
-    height: 400px;
+.menulayer{
+    /* height: 400px; */
     width: 100%;
     line-height: 30px;
     background-color: #FFF;
     opacity: 0.8;
     text-align: center;
-    padding: 50px 100px;
+    padding: 100px 300px;
     
 }
 .discover{
-    height: 450px;
+    /* height: 550px; */
     background-color: #FFF;
     margin-top: 250px;
     opacity: 0.8;
@@ -154,7 +167,7 @@ font-family: "Raleway";
     /* text-align: center; */
 }
 .disc{
-    row-gap: 100px;
+    display: flex;  
 }
 /* Section-4 background */
 #back{
@@ -218,10 +231,10 @@ input,select{
     background-color: #2a3b40;
     color: #FFF;
 }
-span{
+.r{
     position: relative;
 }
-span::after{
+.r::after{
     content: "";
     position: absolute;
     top: 20px;

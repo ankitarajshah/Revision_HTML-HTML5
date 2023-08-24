@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class*="box"]{
+            height: 100px;
+            width: 600px;
+        }
+        
+        .chakra{
+            height: 100px;
+            width: 100px;
+            border: 2px solid blue;
+            /* background-color: blue; */
+            margin: auto;
+            border-radius: 50px;
+            position: relative;
+        }
+        .line{
+            height: 1px;
+            width: 100%;
+            color: blue;
+            background-color: blue;
+            position: absolute;
+            margin: auto;
+            top:45%;
+            left:0;
+
+        }
+        .line a{
+            top: 50%;
+            transform:rotate(0 deg);
+        }
+        .line b{
+            top: 55%;
+            transform:rotate(30 deg);
+        }
+        .line c{
+            transform:rotate(60 deg);
+        }
+        .line d{
+            transform:rotate(90 deg);
+        }
+        .line e{
+            transform:rotate(120 deg);
+        }
+        .line f{
+            transform:rotate(150 deg);
+        }
+        .line g{
+            transform:rotate(180 deg);
+        }
+        .line h{
+            transform:rotate(210 deg);
+        }
+       .box-1
+       {
+            background-color: orange;
+       }
+       .box-2
+       {
+            background-color: white;
+       }
+       .box-3
+       {
+            background-color: green;
+       }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box-1"></div>
+        <div class="box-2">
+            <div class="chakra">
+                <div class="line a"></div>
+                <div class="line b"></div>
+                <div class="line c"></div>
+                <div class="line d"></div>
+                <div class="line e"></div>
+                <div class="line f"></div>
+                <div class="line g"></div>
+                <div class="line h"></div>
+                <div class="line 9"></div>
+                <div class="line 10"></div>
+                <div class="line 11"></div>
+                <div class="line 12"></div>
+                
+
+            </div>
+        </div>
+        <div class="box-3"></div>
+    </div>
+</body>
+</html>
